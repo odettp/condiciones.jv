@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img-google {
+            height:  150px;
+        }
+    </style>
+</head>
+<body>
+    <img onclick="
+    var imagen = document.querySelector('#imagen');
+    var borde = imagen.style.border;
+    
+    console.log(borde);
+    //Ponerle el borde
+    if (borde != '') {
+        imagen.style.border = '';
+    } else {
+        imagen.style.border = '2px solid red';
+    }
+    " src="./assets/img/google.png" id="imagen" alt="imagen" class="img-google" />
+</body>
+</html>
